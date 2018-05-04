@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deepblue"
+    tools:context="com.example.sonamessteetenzin.perfectplate.Registration">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp"
+        android:contentDescription="@string/pic_name"
+        app:srcCompat="@drawable/image" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="197dp"
+            android:background="@color/green"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:text="Login To Get Started"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtname"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/edtemail"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/edtname"
+            android:layout_alignStart="@+id/edtname"
+            android:layout_below="@+id/edtname"
+            android:layout_marginTop="17dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/edtuname"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/edtemail"
+            android:layout_alignStart="@+id/edtemail"
+            android:layout_below="@+id/edtemail"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/edtpasw"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/edtuname"
+            android:layout_alignStart="@+id/edtuname"
+            android:layout_below="@+id/edtuname"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/register"
+        android:textColor="@color/deepblue"
+        android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+

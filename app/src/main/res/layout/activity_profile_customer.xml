@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sonamessteetenzin.perfectplate.ProfileCustomer">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/cobaltblue"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ccleimgview"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_account_circle_black_24dp"
+                android:layout_centerHorizontal="true"
+                android:elevation="1dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="380dp"
+                    android:layout_height="115dp"
+                    android:layout_marginTop="85dp"
+                    app:cardCornerRadius="10dp"
+                    app:contentPadding="1dp"
+                    app:contentPaddingBottom="15dp"
+                    app:contentPaddingLeft="15dp"
+                    app:contentPaddingRight="15dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:text="SONAM TENZIN"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:text="Edit"
+                        android:onClick="Clickbtn"
+                        android:id="@+id/btnedit"/>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="228dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:background="@color/white"
+        android:text="@string/Description"
+        android:textSize="20sp"
+        android:paddingTop="60dp"/>
+
+    <ImageView
+        android:id="@+id/button2"
+        android:layout_width="420dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:background="@color/buttongreen"
+        android:src="@drawable/ic_menu_gallery"
+        android:text="Gallery"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+
+    <ImageView
+        android:id="@+id/PhotoUpload"
+        android:layout_width="420dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/buttongreen"
+        android:src="@drawable/ic_menu_camera"
+        android:text="Upload Photo"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
